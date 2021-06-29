@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A* Path Finding</title>
+</head>
+<body>
+    <h1>A* Path Finding</h1>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.min.js"></script>
+    <script src="app.js"></script>
+    <form style = "margin-left: 39%;">
+        <input id = "radio" type="radio" onClick="history.go(0)" value="Refresh">
+        <label for="radio">Restart</label>
+        <input id = "play" type="radio"  onclick="run()">
+        <label for="play">Start</label>
+        </form>
+        <script>
+            function run() {        
+                for (var i = 0; i < path.length; i++) {
+                    path[i].show(color(0, 0, 255));
+                }
+            }
+        </script>
+</body>
+</html>
